@@ -4,7 +4,9 @@
     <meta charset="UTF-8">
     
     <title>Тестовая страница</title>
-</head
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+    </head>
     
 <body>
     <!--Header-->
@@ -32,7 +34,7 @@
         <h4>Начинающий веб-разработчик</h4>
         <input type="submit" value="Обо мне">
         <input type="submit" value="Мои работы">
-        <img class="person__photo" src="https://fakeimg.pl/500x380" alt="">
+        
     </div></div>
     
     
@@ -40,13 +42,15 @@
     
     <div class="about">
         <div class="about__title">ОБО МНЕ</div>
-        <img class="about__photo" src="https://fakeimg.pl/70x70" alt="">
+        <hr class="sep">
+        <img class="about__photo" src="https://fakeimg.pl/200x200" alt="">
         <div class="about__text">
                         <p>
-                            some textsome textsome textsome textsome textsome textsome textsome textsome textsome textsome textsome textsome textsome textsome textsome textsome textsome textsome textsome textsome textsome textsome textsome textsome text</p>
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut, eius. Esse perspiciatis ad laboriosam aliquam tempora? Impedit nisi suscipit maiores quam sit ipsum, molestiae ex laboriosam neque eum, quo temporibus!</p>
+                            
 
         </div>
-        <button class="btn"type="button">Скачать резюме</button>
+        <button class="btn" type="button">Скачать резюме</button>
         
     </div>
     
@@ -54,24 +58,25 @@
     
     <div class="skills">
         <div class="skills__title">ЧТО Я УМЕЮ</div>
+        <hr class="sep">
         <div class="skills__blocks">
           <div class="skills__sep">
-              <img class="skills_icon" src="img/monitor.svg" width="44" alt="">
+              <img class="skills__icon" src="img/monitor.svg"  height="45" width="45" alt="">
               <div class="sep__title">Веб-дизайн</div>
               <div class="sep__text">some textsome textsome textsome textsome textsome textsome textsome</div>
           </div>
           <div class="skills__sep">
-              <img class="skills_icon" src="img/coding.svg" width="44" alt="">
+              <img class="skills__icon" src="img/coding.svg"  height="45" width="45" alt="">
               <div class="sep__title">Разработка</div>
               <div class="sep__text">some textsome textsome textsome textsome textsome textsome textsome</div>
           </div>
           <div class="skills__sep">
-              <img class="skills_icon" src="img/rocket.svg" width="44" alt="">
+              <img class="skills__icon" src="img/rocket.png"  height="45" width="45" alt="">
               <div class="sep__title">CEO-Оптимизация</div>
               <div class="sep__text">some textsome textsome textsome textsome textsome textsome textsome</div>
           </div>
           <div class="skills__sep">
-              <img class="skills_icon" src="img/megaphone.svg" width="44" alt="">
+              <img class="skills__icon" src="img/megaphone.svg"  height="45" width="45" alt="">
               <div class="sep__title">Маркетинг</div>
               <div class="sep__text">some textsome textsome textsome textsome textsome textsome textsome</div>
           </div>
@@ -85,24 +90,26 @@
     
     <div class="cases">
         <div class="cases__title">КЕЙСЫ</div>
+        <hr class="sep">
         <div class="text__cases">some textsome textsome textsome textsome textsome textsome textsome</div>
-        <img class="screen__cases" src="https://fakeimg.pl/800x500" alt="">
+        <img class="screen__cases" src="https://fakeimg.pl/1170x590" alt="">
         <div class="cases__info">
             <div class="cases__client">
                 <div class="client__title">CLIENT</div>
                 <div class="client__name">Название компании</div>
             </div>
-            <div class="cases__website">
+           
+            <div class="cases__desc">
+                <div class="desc__title">Название проекта</div>
+                <div class="desc__text">some textsome textsome textsome textsome textsome textsome textsome textsome textsome textsome textsome textsome textsome textsome textsome textsome textsome textsome textsome some textsome textsome textsome textsome textsome textsome textsome textsome textsome textsome textsome textsome textsome textsome textsome textsome textsome textsome textsome</div>
+            </div>
+             <div class="cases__website">
                 <div class="website__title">WEBSITE</div>
                 <div class="website__url">http://google.com</div>
             </div>    
-            <div class="cases__desc">
-                <div class="desc__title">Название проекта</div>
-                <div class="desc__text">some textsome textsome textsome textsome textsome textsome textsome textsome textsome textsome textsome textsome textsome textsome textsome textsome textsome textsome textsome</div>
-            </div>
             
         </div>
-        <button class="btn__case"type="button">VISIT LIVE SITE</button>
+        <button class="btn__case" type="button">VISIT LIVE SITE</button>
         
     </div>
     
@@ -111,35 +118,38 @@
     
     
     <div class="price">
+       
         <div class="price__title">Расчет стоимости</div>
         <div class="select__title">ТИП САЙТА</div>
-        <select name="type" id="list">
-            <option value="">Выберите пункт</option>
-            <option value="visit">Визитка</option>
-            <option value="on-line">On-line сервис</option>
+        
+           <select name="type" id="list">
+            <option value="0">Выберите пункт...</option>
+            <option value="1">Визитка</option>
+            <option value="2">On-line сервис</option>
         </select>
+        
         
         <div class="select__title">ДИЗАЙН</div>
         <select name="type" id="list">
-            <option value="">Выберите пункт</option>
-            <option value="text">Текстовый</option>
-            <option value="dinamic">Динамический</option>
+            <option value="0">Выберите пункт...</option>
+            <option value="1">Текстовый</option>
+            <option value="2">Динамический</option>
         </select>
         
         <div class="select__title">АДАПТИВНОСТЬ</div>
         <select name="type" id="list">
-            <option value="">Выберите пункт</option>
-            <option value="pc">Персональные компьютеры</option>
-            <option value="mobile">Планшеты и мобильные устройства</option>
+            <option value="0">Выберите пункт...</option>
+            <option value="1">Персональные компьютеры</option>
+            <option value="2">Планшеты и мобильные устройства</option>
         </select>
-        
+        <div class="pre__count"></div>
         <div class="count">
             <div class="time">Сроки</div>
             <div class="time__count">0</div>
             <div class="offer">Стоимость</div>
             <div class="offer__count">0</div>
-        </div>
         
+        </div>
     </div>
     
     <!------Statistic---->
@@ -147,26 +157,26 @@
     
     <div class="statistic">
         <div class="stat__title">НЕМНОГО СТАТИСТИКИ</div>
-        
+        <hr class="sep">
         <div class="stat__blocks">
           <div class="stat__sep">
-              <img class="stat__icon" src="img/smile.svg" width="44" alt="">
-              <div class="stat__sep__title">0</div>
+              <img class="stat__icon" src="img/smile.svg" width="50" alt="">
+              <div class="stat__sep__title">120</div>
               <div class="stat__sep__text">СЧАСТЛИВЫХ КЛИЕНТОВ</div>
           </div>
           <div class="stat__sep">
-              <img class="stat__icon" src="img/coding.svg" width="44" alt="">
-              <div class="stat__sep__title">0</div>
+              <img class="stat__icon" src="img/coding.svg" width="50" alt="">
+              <div class="stat__sep__title">4,600</div>
               <div class="stat__sep__text">ЧАСОВ РАБОТЫ</div>
           </div>
           <div class="stat__sep">
-              <img class="stat__icon" src="img/like.svg" width="44" alt="">
-              <div class="stat__sep__title">0</div>
+              <img class="stat__icon" src="img/like.svg" width="50" alt="">
+              <div class="stat__sep__title">340</div>
               <div class="stat__sep__text">ПРОЕКТОВ ЗАВЕРШЕНО</div>
           </div>
           <div class="stat__sep">
-              <img class="stat__icon" src="img/trophy.svg" width="44" alt="">
-              <div class="stat__sep__title">0</div>
+              <img class="stat__icon" src="img/trophy.svg" width="50" alt="">
+              <div class="stat__sep__title">23</div>
               <div class="stat__sep__text">НАГРАД ПОЛУЧЕНО</div>
           </div>
            
@@ -178,9 +188,15 @@
     
     <div class="reviews">
        <div class="reviews__title">ОТЗЫВЫ</div>
-       <img class="author_photo" src="https://fakeimg.pl/70x70" alt="">
-       <div class="reviews__text">some text some text some text some text some text some text some text some text </div>
-       <div class="author__name">Михаил, Важный чел Большой конторы</div>
+       <hr class="sep">
+       <img class="author__photo" src="https://fakeimg.pl/100x100" alt="">
+       <div class="reviews__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quia id quis similique molestiae voluptatibus, ducimus neque sequi non doloribus temporibus inventore odit porro veniam natus, quaerat! Rem a fuga reprehenderit!</div>
+        <div class="author__name"><b>Михаил</b>, Важный чел Большой конторы</div>
+        <div class="swipe">
+            <img class="stat__icon" src="img/dry-clean-or.png" width="11" alt="">
+            <img class="stat__icon" src="img/dry-clean-gr.png" width="11" alt="">
+            <img class="stat__icon" src="img/dry-clean-gr.png" width="11" alt="">
+        </div>
        
         
     </div>
@@ -189,42 +205,48 @@
     
     <div class="contacts">
         <div class="contact__title">МОИ КОНТАКТЫ</div>
+        <hr class="sep">
         <div class="contact__text">some text some text some text some text some text some text some text some text </div>
         <div class="contacts__data">
             <div class="address">
-                <img class="address__icon" src="img/place.svg" width="25" alt="">
-                <div class="address__text">Санкт-Петербург<br>Невский проспект 11</div>
+                <img class="con__icon" src="img/place.svg" width="25" alt="">
+                <div class="cont__text">Санкт-Петербург<br>Невский проспект 11</div>
             </div>
             <div class="mail">
-                <img class="mail__icon" src="img/email.svg" width="25" alt="">
-                <div class="mail__text">info@companyname.com</div>
+                <img class="con__icon" src="img/email.svg" width="25" alt="">
+                <div class="cont__text">info@companyname.com</div>
             </div>   
             <div class="phone">
-                <img class="phone__icon" src="img/phone-call.svg" width="25" alt="">
-                <div class="phone__text">+7 999 999-99-99</div>
+                <img class="con__icon" src="img/phone-call.svg" width="25" alt="">
+                <div class="cont__text">+7 999 999-99-99</div>
             </div>
         </div>
         <div class="message__me">ОСТАВЬТЕ МНЕ СООБЩЕНИЕ</div>
-        <textarea name="name" id="1" cols="30" rows="1" placeholder="Имя"></textarea>
-        <textarea name="email" id="2" cols="30" rows="1" placeholder="Email"></textarea>
-        <textarea name="message" id="3" cols="50" rows="10" placeholder="Сообщение"></textarea>
-        <button class="btn__contacts"type="button">Отправить</button>
+        <div class="input__data">
+             <input type="text" class="textinput1" name="name" id="1" placeholder="Имя">
+             <input type="text" class="textinput2" name="email" id="2" placeholder="Email">
+        </div>
+        <div class="input__mes">
+            <input type="text" class="textinput3" name="message" cols="30" id="3" placeholder="Сообщение">
+        </div>
+        
+        <button class="btn__contacts" type="button">Отправить</button>
         
         <div class="social">
-                    <a class="social__link" href="#">
-                        <img src="img/gmail.png" width="25" height="25" alt="">
+                    <a  href="#">
+                        <img src="img/gmail.png" width="28" height="28" alt="">
                     </a>
-                    <a class="social__link" href="#">
-                        <img src="img/telegram.png" width="25" height="25" alt="">
+                    <a  href="#">
+                        <img src="img/telegram.png" width="28" height="28"  alt="">
                     </a>
-                    <a class="social__link" href="#">
-                        <img src="img/vk.png" width="25" height="25" alt="">
+                    <a  href="#">
+                        <img src="img/vk.png" width="28" height="28" alt="">
                     </a>
-                    <a class="social__link" href="#">
-                        <img src="img/viber.png" width="25" height="25" alt="">
+                    <a  href="#">
+                        <img src="img/viber.png" width="28" height="28" alt="">
                     </a>
-                    <a class="social__link" href="#">
-                        <img src="img/whatsapp.png" width="25" height="25" alt="">
+                    <a  href="#">
+                        <img src="img/whatsapp.png" width="28" height="28" alt="">
                     </a>
 
                 </div>
@@ -233,7 +255,7 @@
     
     <!------Navigation---->
     
-    <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A45a45c2c49bc5c77436b8ddfeee64ce9f6487bff479f7838c63fdd630f6eb780&amp;width=849&amp;height=593&amp;lang=ru_RU&amp;scroll=true"></script>
+    <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A45a45c2c49bc5c77436b8ddfeee64ce9f6487bff479f7838c63fdd630f6eb780&amp;width=100%&amp;height=350&amp;lang=ru_RU&amp;scroll=true"></script>
      
     
     <!----Footer----->
